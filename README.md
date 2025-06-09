@@ -6,8 +6,8 @@ This repository contains the Matlab implementation of the algorithm framework fo
 Dataset of the proposed method can be found [here](https://drive.google.com/drive/folders/15MoqpG_FaMdh3ALYhfIvz34nszzy8o9Y?dmr=1&ec=wgc-drive-hero-goto).
 
 ## Benchmark
-Benchmarks used in this paper includes [the Maximum Independent Set (MIS)](https://dx.doi.org/https://doi.org/10.1016/0196-6774(86)90032-5),  
- [Minimum Vertex Cover (MVC)](https://hochbaum.ieor.berkeley.edu/html/pub/Approx-Alg-book-ch3.pdf),  [Set Cover (SC)](https://dl.acm.org/doi/10.1145/780542.780558) and [Combinatorial Auction (CA)](https://www.cramton.umd.edu/papers2005-2009/cramton-shoham-steinberg-combinatorial-auctions-introduction.pdf).
+Benchmarks used in this paper includes [the Maximum Independent Set (MIS)](https://dx.doi.org/https://doi.org/10.1016/0196-6774(86)90032-5), 
+ [Minimum Vertex Cover (MVC)](https://hochbaum.ieor.berkeley.edu/html/pub/Approx-Alg-book-ch3.pdf), [Set Cover (SC)](https://dl.acm.org/doi/10.1145/780542.780558) and [Combinatorial Auction (CA)](https://www.cramton.umd.edu/papers2005-2009/cramton-shoham-steinberg-combinatorial-auctions-introduction.pdf).
 
 ## Baselines
 To benchmark the performance of our approach, we compare it against several state-of-the-art solvers [Gurobi](https://www.dcc.fc.up.pt/~jpp/seminars/azores/gurobi-intro.pdf) and [SCIP](https://dx.doi.org/https://doi.org/10.1007/s12532-008-0001-1), and advanced Large Neighborhood Search (LNS) variants, including [Random-LNS](https://papers.nips.cc/paper/2020/hash/e769e03a9d329b2e864b4bf4ff54ff39-Abstract.html), [Least-Integral (LI)](https://homes.di.unimi.it/righini/Didattica/ComplementiRicercaOperativa/MaterialeCRO/2000%20-%20Mitchell%20-%20branch-and-cut.pdf), [Least-Integral (LI)](https://homes.di.unimi.it/righini/Didattica/ComplementiRicercaOperativa/MaterialeCRO/2000%20-%20Mitchell%20-%20branch-and-cut.pdf), [Most-Integral (MI)](https://homes.di.unimi.it/righini/Didattica/ComplementiRicercaOperativa/MaterialeCRO/2000%20-%20Mitchell%20-%20branch-and-cut.pdf), [Relaxation Induced Neighborhood Search (RINS)](https://dx.doi.org/https://doi.org/10.1007/s10107-004-0510-0).
