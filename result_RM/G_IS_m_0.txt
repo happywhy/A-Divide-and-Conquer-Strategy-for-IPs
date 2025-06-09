@@ -1,0 +1,1362 @@
+nohup: ignoring input
+maximize
+Set parameter Username
+Set parameter LicenseID to value 2625405
+Academic license - for non-commercial use only - expires 2026-02-20
+Set parameter TimeLimit to value 4.0496514821052551e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  4.0496514821052551e+02
+
+Optimize a model with 300000 rows, 100000 columns and 600000 nonzeros
+Model fingerprint: 0xd6398fa8
+Variable types: 0 continuous, 100000 integer (100000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 16190.696928
+Presolve removed 29421 rows and 7510 columns
+Presolve time: 5.01s
+Presolved: 270579 rows, 92490 columns, 541193 nonzeros
+Found heuristic solution: objective 16541.989378
+Variable types: 0 continuous, 92490 integer (92490 binary)
+Found heuristic solution: objective 16824.991585
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Root relaxation presolved: 92490 rows, 363069 columns, 633683 nonzeros
+
+Root barrier log...
+
+Elapsed ordering time = 5s
+Elapsed ordering time = 10s
+Elapsed ordering time = 15s
+Elapsed ordering time = 20s
+Elapsed ordering time = 25s
+Elapsed ordering time = 28s
+Elapsed ordering time = 30s
+Elapsed ordering time = 35s
+Elapsed ordering time = 40s
+Elapsed ordering time = 42s
+Elapsed ordering time = 45s
+Elapsed ordering time = 50s
+Elapsed ordering time = 55s
+Elapsed ordering time = 62s
+Elapsed ordering time = 65s
+Elapsed ordering time = 70s
+Elapsed ordering time = 75s
+Elapsed ordering time = 80s
+Ordering time: 86.98s
+
+Barrier statistics:
+ AA' NZ     : 2.706e+05
+ Factor NZ  : 5.878e+08 (roughly 5.0 GB of memory)
+ Factor Ops : 1.276e+13 (roughly 50 seconds per iteration)
+ Threads    : 14
+
+Barrier performed 0 iterations in 102.83 seconds (7.36 work units)
+Barrier solve interrupted - model solved by another algorithm
+
+Concurrent spin time: 26.74s (can be avoided by choosing Method=3)
+
+Solved with primal simplex
+
+Root relaxation: objective 2.534997e+04, 141259 iterations, 97.51 seconds (9.69 work units)
+Total elapsed time = 129.64s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 25349.9664    0 91523 16824.9916 25349.9664  50.7%     -  133s
+H    0     0                    16825.451660 25349.9664  50.7%     -  133s
+H    0     0                    17177.457088 25349.9664  47.6%     -  134s
+H    0     0                    20830.747253 25349.9664  21.7%     -  135s
+H    0     0                    21175.075194 25349.9664  19.7%     -  135s
+H    0     0                    21200.122330 25349.9664  19.6%     -  137s
+H    0     0                    21576.301273 25349.9664  17.5%     -  138s
+H    0     0                    21624.076833 25349.9664  17.2%     -  138s
+H    0     0                    21624.300420 25349.4638  17.2%     -  256s
+     0     0          -    0      21624.3004 25349.4638  17.2%     -  404s
+
+Cutting planes:
+  Gomory: 12
+  Zero half: 69
+  RLT: 224
+  BQP: 1
+
+Explored 1 nodes (145462 simplex iterations) in 405.17 seconds (40.80 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 10: 21624.3 21624.1 21576.3 ... 16542
+
+Time limit reached
+Best objective 2.162430041957e+04, best bound 2.534946380102e+04, gap 17.2267%
+Set parameter TimeLimit to value 2.0328512048721313e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0328512048721313e+02
+
+Optimize a model with 198529 rows, 49754 columns and 264724 nonzeros
+Model fingerprint: 0x09c1dbb8
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20265.614199
+Presolve removed 179274 rows and 28962 columns
+Presolve time: 0.09s
+Presolved: 19255 rows, 20792 columns, 38510 nonzeros
+Variable types: 0 continuous, 20792 integer (20792 binary)
+Performing another presolve...
+Presolve removed 19255 rows and 20792 columns
+Presolve time: 0.08s
+Found heuristic solution: objective 21717.724836
+
+Explored 1 nodes (0 simplex iterations) in 0.24 seconds (0.12 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 21717.7 20265.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.171772483637e+04, best bound 2.171772483637e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8238215756416321e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8238215756416321e+02
+
+Optimize a model with 233805 rows, 50000 columns and 335276 nonzeros
+Model fingerprint: 0x5cb51ae7
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20432.290061
+Presolve removed 214250 rows and 30965 columns
+Presolve time: 0.10s
+Presolved: 19555 rows, 19035 columns, 39110 nonzeros
+Variable types: 0 continuous, 19035 integer (19035 binary)
+Performing another presolve...
+Presolve removed 19555 rows and 19035 columns
+Presolve time: 0.10s
+Found heuristic solution: objective 21720.425056
+
+Explored 1 nodes (0 simplex iterations) in 0.27 seconds (0.15 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 21720.4 20432.3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.172042505647e+04, best bound 2.172042505647e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0497618699073792e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0497618699073792e+02
+
+Optimize a model with 198860 rows, 49753 columns and 265599 nonzeros
+Model fingerprint: 0x1c8b865b
+Variable types: 0 continuous, 49753 integer (49753 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20330.575712
+Presolve removed 179444 rows and 28798 columns
+Presolve time: 0.08s
+Presolved: 19416 rows, 20955 columns, 38832 nonzeros
+Variable types: 0 continuous, 20955 integer (20955 binary)
+Performing another presolve...
+Presolve removed 19416 rows and 20955 columns
+Presolve time: 0.08s
+Found heuristic solution: objective 21841.958226
+
+Explored 1 nodes (0 simplex iterations) in 0.24 seconds (0.12 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 21842 20330.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.184195822628e+04, best bound 2.184195822628e+04, gap 0.0000%
+Set parameter TimeLimit to value 184.275084733963
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  184.275084733963
+
+Optimize a model with 233261 rows, 50001 columns and 334401 nonzeros
+Model fingerprint: 0xc4d6c42d
+Variable types: 0 continuous, 50001 integer (50001 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20558.993245
+Presolve removed 214162 rows and 31238 columns
+Presolve time: 0.10s
+Presolved: 19099 rows, 18763 columns, 38198 nonzeros
+Variable types: 0 continuous, 18763 integer (18763 binary)
+Performing another presolve...
+Presolve removed 19099 rows and 18763 columns
+Presolve time: 0.07s
+Found heuristic solution: objective 21821.984031
+
+Explored 1 nodes (0 simplex iterations) in 0.24 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 21822 20559 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.182198403108e+04, best bound 2.182198403108e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0683723378181458e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0683723378181458e+02
+
+Optimize a model with 199137 rows, 49753 columns and 265698 nonzeros
+Model fingerprint: 0xfc842774
+Variable types: 0 continuous, 49753 integer (49753 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20531.353714
+Presolve removed 180141 rows and 29080 columns
+Presolve time: 0.08s
+Presolved: 18996 rows, 20673 columns, 37992 nonzeros
+Variable types: 0 continuous, 20673 integer (20673 binary)
+Performing another presolve...
+Presolve removed 18996 rows and 20673 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 21943.924679
+
+Explored 1 nodes (0 simplex iterations) in 0.21 seconds (0.12 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 21943.9 20531.4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.194392467946e+04, best bound 2.194392467946e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8658907413482666e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8658907413482666e+02
+
+Optimize a model with 233439 rows, 50001 columns and 334302 nonzeros
+Model fingerprint: 0x22819f00
+Variable types: 0 continuous, 50001 integer (50001 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20508.588806
+Presolve removed 214287 rows and 31048 columns
+Presolve time: 0.10s
+Presolved: 19152 rows, 18953 columns, 38304 nonzeros
+Variable types: 0 continuous, 18953 integer (18953 binary)
+Performing another presolve...
+Presolve removed 19152 rows and 18953 columns
+Presolve time: 0.10s
+Found heuristic solution: objective 21930.137370
+
+Explored 1 nodes (0 simplex iterations) in 0.27 seconds (0.15 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 21930.1 20508.6 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.193013737010e+04, best bound 2.193013737010e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0596140623092651e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0596140623092651e+02
+
+Optimize a model with 199007 rows, 49753 columns and 265957 nonzeros
+Model fingerprint: 0x38278569
+Variable types: 0 continuous, 49753 integer (49753 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20531.060787
+Presolve removed 180023 rows and 29289 columns
+Presolve time: 0.08s
+Presolved: 18984 rows, 20464 columns, 37968 nonzeros
+Variable types: 0 continuous, 20464 integer (20464 binary)
+Performing another presolve...
+Presolve removed 18984 rows and 20464 columns
+Presolve time: 0.07s
+Found heuristic solution: objective 22021.037112
+
+Explored 1 nodes (0 simplex iterations) in 0.23 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22021 20531.1 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.202103711165e+04, best bound 2.202103711165e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8569388747215271e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8569388747215271e+02
+
+Optimize a model with 233050 rows, 50001 columns and 334043 nonzeros
+Model fingerprint: 0x33d97c84
+Variable types: 0 continuous, 50001 integer (50001 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20678.896855
+Presolve removed 214133 rows and 31303 columns
+Presolve time: 0.10s
+Presolved: 18917 rows, 18698 columns, 37834 nonzeros
+Variable types: 0 continuous, 18698 integer (18698 binary)
+Performing another presolve...
+Presolve removed 18917 rows and 18698 columns
+Presolve time: 0.07s
+Found heuristic solution: objective 22025.587719
+
+Explored 1 nodes (0 simplex iterations) in 0.24 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22025.6 20678.9 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.202558771927e+04, best bound 2.202558771927e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0634407496452332e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0634407496452332e+02
+
+Optimize a model with 199229 rows, 49754 columns and 265535 nonzeros
+Model fingerprint: 0xa9689fb9
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20591.539130
+Presolve removed 180570 rows and 29473 columns
+Presolve time: 0.09s
+Presolved: 18659 rows, 20281 columns, 37318 nonzeros
+Variable types: 0 continuous, 20281 integer (20281 binary)
+Performing another presolve...
+Presolve removed 18659 rows and 20281 columns
+Presolve time: 0.08s
+Found heuristic solution: objective 22111.314603
+
+Explored 1 nodes (0 simplex iterations) in 0.23 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22111.3 20591.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.211131460298e+04, best bound 2.211131460298e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8570598340034485e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8570598340034485e+02
+
+Optimize a model with 233694 rows, 50000 columns and 334465 nonzeros
+Model fingerprint: 0x21feb59f
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20795.805134
+Presolve removed 215545 rows and 31652 columns
+Presolve time: 0.11s
+Presolved: 18149 rows, 18348 columns, 36298 nonzeros
+Variable types: 0 continuous, 18348 integer (18348 binary)
+Performing another presolve...
+Presolve removed 18149 rows and 18348 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22097.700377
+
+Explored 1 nodes (0 simplex iterations) in 0.25 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22097.7 20795.8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.209770037724e+04, best bound 2.209770037724e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0440900611877441e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0440900611877441e+02
+
+Optimize a model with 198959 rows, 49754 columns and 265648 nonzeros
+Model fingerprint: 0xb2da1cb0
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20631.503515
+Presolve removed 179943 rows and 29171 columns
+Presolve time: 0.09s
+Presolved: 19016 rows, 20583 columns, 38032 nonzeros
+Variable types: 0 continuous, 20583 integer (20583 binary)
+Performing another presolve...
+Presolve removed 19016 rows and 20583 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22177.570545
+
+Explored 1 nodes (0 simplex iterations) in 0.21 seconds (0.12 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22177.6 20631.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.217757054501e+04, best bound 2.217757054501e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8396174764633179e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8396174764633179e+02
+
+Optimize a model with 233311 rows, 50000 columns and 334352 nonzeros
+Model fingerprint: 0x43790c12
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20905.870213
+Presolve removed 215030 rows and 31681 columns
+Presolve time: 0.11s
+Presolved: 18281 rows, 18319 columns, 36562 nonzeros
+Variable types: 0 continuous, 18319 integer (18319 binary)
+Performing another presolve...
+Presolve removed 18281 rows and 18319 columns
+Presolve time: 0.08s
+Found heuristic solution: objective 22178.810660
+
+Explored 1 nodes (0 simplex iterations) in 0.26 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22178.8 20905.9 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.217881065954e+04, best bound 2.217881065954e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0366004037857056e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0366004037857056e+02
+
+Optimize a model with 198911 rows, 49754 columns and 265213 nonzeros
+Model fingerprint: 0x83dace0d
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [6e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20739.303433
+Presolve removed 180032 rows and 29301 columns
+Presolve time: 0.09s
+Presolved: 18879 rows, 20453 columns, 37758 nonzeros
+Variable types: 0 continuous, 20453 integer (20453 binary)
+Performing another presolve...
+Presolve removed 18879 rows and 20453 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22250.070885
+
+Explored 1 nodes (0 simplex iterations) in 0.21 seconds (0.12 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22250.1 20739.3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.225007088473e+04, best bound 2.225007088473e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8163389992713928e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8163389992713928e+02
+
+Optimize a model with 233698 rows, 50000 columns and 334787 nonzeros
+Model fingerprint: 0xc78794ee
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20810.524877
+Presolve removed 215379 rows and 31688 columns
+Presolve time: 0.11s
+Presolved: 18319 rows, 18312 columns, 36638 nonzeros
+Variable types: 0 continuous, 18312 integer (18312 binary)
+Performing another presolve...
+Presolve removed 18319 rows and 18312 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22232.491758
+
+Explored 1 nodes (0 simplex iterations) in 0.23 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22232.5 20810.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.223249175778e+04, best bound 2.223249175778e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0579315042495728e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0579315042495728e+02
+
+Optimize a model with 199090 rows, 49753 columns and 265155 nonzeros
+Model fingerprint: 0xb6716f54
+Variable types: 0 continuous, 49753 integer (49753 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20797.969434
+Presolve removed 180391 rows and 29347 columns
+Presolve time: 0.08s
+Presolved: 18699 rows, 20406 columns, 37398 nonzeros
+Variable types: 0 continuous, 20406 integer (20406 binary)
+Performing another presolve...
+Presolve removed 18699 rows and 20406 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22308.915211
+
+Explored 1 nodes (0 simplex iterations) in 0.21 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22308.9 20798 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.230891521143e+04, best bound 2.230891521143e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8467917037010193e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8467917037010193e+02
+
+Optimize a model with 233935 rows, 50001 columns and 334845 nonzeros
+Model fingerprint: 0x488845a3
+Variable types: 0 continuous, 50001 integer (50001 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20925.239808
+Presolve removed 215751 rows and 31814 columns
+Presolve time: 0.11s
+Presolved: 18184 rows, 18187 columns, 36368 nonzeros
+Variable types: 0 continuous, 18187 integer (18187 binary)
+Performing another presolve...
+Presolve removed 18184 rows and 18187 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22301.625752
+
+Explored 1 nodes (0 simplex iterations) in 0.24 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22301.6 20925.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.230162575172e+04, best bound 2.230162575172e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0578377914428711e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0578377914428711e+02
+
+Optimize a model with 199050 rows, 49754 columns and 265553 nonzeros
+Model fingerprint: 0xaf29b844
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20801.738102
+Presolve removed 180403 rows and 29556 columns
+Presolve time: 0.08s
+Presolved: 18647 rows, 20198 columns, 37294 nonzeros
+Variable types: 0 continuous, 20198 integer (20198 binary)
+Performing another presolve...
+Presolve removed 18647 rows and 20198 columns
+Presolve time: 0.08s
+Found heuristic solution: objective 22350.779505
+
+Explored 1 nodes (0 simplex iterations) in 0.23 seconds (0.12 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22350.8 20801.7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.235077950526e+04, best bound 2.235077950526e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8613938546180725e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8613938546180725e+02
+
+Optimize a model with 233497 rows, 50000 columns and 334447 nonzeros
+Model fingerprint: 0x789f19eb
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20933.861648
+Presolve removed 215492 rows and 31904 columns
+Presolve time: 0.11s
+Presolved: 18005 rows, 18096 columns, 36010 nonzeros
+Variable types: 0 continuous, 18096 integer (18096 binary)
+Performing another presolve...
+Presolve removed 18005 rows and 18096 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22356.583042
+
+Explored 1 nodes (0 simplex iterations) in 0.23 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22356.6 20933.9 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.235658304153e+04, best bound 2.235658304153e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0571999669075012e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0571999669075012e+02
+
+Optimize a model with 199000 rows, 49754 columns and 265518 nonzeros
+Model fingerprint: 0x702610ac
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20823.967768
+Presolve removed 180250 rows and 29458 columns
+Presolve time: 0.09s
+Presolved: 18750 rows, 20296 columns, 37500 nonzeros
+Variable types: 0 continuous, 20296 integer (20296 binary)
+Performing another presolve...
+Presolve removed 18750 rows and 20296 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22404.620271
+
+Explored 1 nodes (0 simplex iterations) in 0.21 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22404.6 20824 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.240462027079e+04, best bound 2.240462027079e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8510178303718567e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8510178303718567e+02
+
+Optimize a model with 233482 rows, 50000 columns and 334482 nonzeros
+Model fingerprint: 0xdd41ebd4
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21005.023274
+Presolve removed 215274 rows and 31858 columns
+Presolve time: 0.10s
+Presolved: 18208 rows, 18142 columns, 36416 nonzeros
+Variable types: 0 continuous, 18142 integer (18142 binary)
+Performing another presolve...
+Presolve removed 18208 rows and 18142 columns
+Presolve time: 0.06s
+Found heuristic solution: objective 22396.845893
+
+Explored 1 nodes (0 simplex iterations) in 0.24 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22396.8 21005 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.239684589347e+04, best bound 2.239684589347e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 2.0349765276908875e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  2.0349765276908875e+02
+
+Optimize a model with 199227 rows, 49754 columns and 265815 nonzeros
+Model fingerprint: 0x2ebdf969
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20863.142805
+Presolve removed 180594 rows and 29541 columns
+Presolve time: 0.17s
+Presolved: 18633 rows, 20213 columns, 37266 nonzeros
+Variable types: 0 continuous, 20213 integer (20213 binary)
+Performing another presolve...
+Presolve removed 18633 rows and 20213 columns
+Presolve time: 0.09s
+Found heuristic solution: objective 22438.969247
+
+Explored 1 nodes (0 simplex iterations) in 0.35 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22439 20863.1 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.243896924671e+04, best bound 2.243896924671e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.8093134975433350e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8093134975433350e+02
+
+Optimize a model with 233412 rows, 50000 columns and 334185 nonzeros
+Model fingerprint: 0x703f60d9
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20971.800852
+Presolve removed 215676 rows and 32077 columns
+Presolve time: 0.27s
+Presolved: 17736 rows, 17923 columns, 35472 nonzeros
+Variable types: 0 continuous, 17923 integer (17923 binary)
+Performing another presolve...
+Presolve removed 17736 rows and 17923 columns
+Presolve time: 0.10s
+Found heuristic solution: objective 22440.584173
+
+Explored 1 nodes (0 simplex iterations) in 0.47 seconds (0.13 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22440.6 20971.8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.244058417291e+04, best bound 2.244058417291e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 1.9352135491371155e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.9352135491371155e+02
+
+Optimize a model with 199097 rows, 49754 columns and 265535 nonzeros
+Model fingerprint: 0x76d18731
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20969.854930
+Presolve removed 180750 rows and 29795 columns
+Presolve time: 0.22s
+Presolved: 18347 rows, 19959 columns, 36694 nonzeros
+Variable types: 0 continuous, 19959 integer (19959 binary)
+Performing another presolve...
+Presolve removed 18347 rows and 19959 columns
+Presolve time: 0.09s
+Found heuristic solution: objective 22474.309170
+
+Explored 1 nodes (0 simplex iterations) in 0.41 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22474.3 20969.9 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.247430916982e+04, best bound 2.247430916982e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.6809994864463806e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.6809994864463806e+02
+
+Optimize a model with 233562 rows, 50000 columns and 334465 nonzeros
+Model fingerprint: 0x8f77c0bf
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21036.233497
+Presolve removed 215821 rows and 32041 columns
+Presolve time: 0.36s
+Presolved: 17741 rows, 17959 columns, 35482 nonzeros
+Variable types: 0 continuous, 17959 integer (17959 binary)
+Performing another presolve...
+Presolve removed 17741 rows and 17959 columns
+Presolve time: 0.10s
+Found heuristic solution: objective 22467.200753
+
+Explored 1 nodes (0 simplex iterations) in 0.68 seconds (0.13 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22467.2 21036.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.246720075310e+04, best bound 2.246720075310e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 1.8923701524734497e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.8923701524734497e+02
+
+Optimize a model with 199228 rows, 49754 columns and 265657 nonzeros
+Model fingerprint: 0xf1aad831
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20951.152849
+Presolve removed 180778 rows and 29632 columns
+Presolve time: 0.66s
+Presolved: 18450 rows, 20122 columns, 36900 nonzeros
+Variable types: 0 continuous, 20122 integer (20122 binary)
+Performing another presolve...
+Presolve removed 18450 rows and 20122 columns
+Presolve time: 0.18s
+Found heuristic solution: objective 22502.277600
+
+Explored 1 nodes (0 simplex iterations) in 1.13 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22502.3 20951.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.250227760021e+04, best bound 2.250227760021e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.0866131114959717e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.0866131114959717e+02
+
+Optimize a model with 233571 rows, 50000 columns and 334343 nonzeros
+Model fingerprint: 0xd61ad28a
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21085.758762
+Presolve removed 215749 rows and 32056 columns
+Presolve time: 0.40s
+Presolved: 17822 rows, 17944 columns, 35644 nonzeros
+Variable types: 0 continuous, 17944 integer (17944 binary)
+Performing another presolve...
+Presolve removed 17822 rows and 17944 columns
+Presolve time: 0.10s
+Found heuristic solution: objective 22499.395326
+
+Explored 1 nodes (0 simplex iterations) in 0.64 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22499.4 21085.8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.249939532591e+04, best bound 2.249939532591e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 1.5446088671684265e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.5446088671684265e+02
+
+Optimize a model with 198694 rows, 49754 columns and 264887 nonzeros
+Model fingerprint: 0x8cb138aa
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21001.751434
+Presolve removed 180422 rows and 29741 columns
+Presolve time: 0.26s
+Presolved: 18272 rows, 20013 columns, 36544 nonzeros
+Variable types: 0 continuous, 20013 integer (20013 binary)
+Performing another presolve...
+Presolve removed 18272 rows and 20013 columns
+Presolve time: 0.11s
+Found heuristic solution: objective 22531.186855
+
+Explored 1 nodes (0 simplex iterations) in 0.49 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22531.2 21001.8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.253118685523e+04, best bound 2.253118685523e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.2143633246421814e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.2143633246421814e+02
+
+Optimize a model with 233807 rows, 50000 columns and 335113 nonzeros
+Model fingerprint: 0x68cf47c8
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21069.110020
+Presolve removed 216000 rows and 32097 columns
+Presolve time: 0.43s
+Presolved: 17807 rows, 17903 columns, 35614 nonzeros
+Variable types: 0 continuous, 17903 integer (17903 binary)
+Performing another presolve...
+Presolve removed 17807 rows and 17903 columns
+Presolve time: 0.12s
+Found heuristic solution: objective 22525.970594
+
+Explored 1 nodes (0 simplex iterations) in 0.77 seconds (0.13 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22526 21069.1 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.252597059385e+04, best bound 2.252597059385e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 1.3379105734825134e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.3379105734825134e+02
+
+Optimize a model with 199175 rows, 49753 columns and 265786 nonzeros
+Model fingerprint: 0xaae85e84
+Variable types: 0 continuous, 49753 integer (49753 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20978.202802
+Presolve removed 181209 rows and 29979 columns
+Presolve time: 0.19s
+Presolved: 17966 rows, 19774 columns, 35932 nonzeros
+Variable types: 0 continuous, 19774 integer (19774 binary)
+Performing another presolve...
+Presolve removed 17966 rows and 19774 columns
+Presolve time: 0.10s
+Found heuristic solution: objective 22550.202710
+
+Explored 1 nodes (0 simplex iterations) in 0.41 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22550.2 20978.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.255020271024e+04, best bound 2.255020271024e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.3131737017631531e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.3131737017631531e+02
+
+Optimize a model with 233389 rows, 50001 columns and 334214 nonzeros
+Model fingerprint: 0xa74f305f
+Variable types: 0 continuous, 50001 integer (50001 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21163.367210
+Presolve removed 215618 rows and 32123 columns
+Presolve time: 0.30s
+Presolved: 17771 rows, 17878 columns, 35542 nonzeros
+Variable types: 0 continuous, 17878 integer (17878 binary)
+Performing another presolve...
+Presolve removed 17771 rows and 17878 columns
+Presolve time: 0.11s
+Found heuristic solution: objective 22554.934661
+
+Explored 1 nodes (0 simplex iterations) in 0.53 seconds (0.13 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22554.9 21163.4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.255493466128e+04, best bound 2.255493466128e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 1.9017455339431763e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.9017455339431763e+02
+
+Optimize a model with 199239 rows, 49753 columns and 266127 nonzeros
+Model fingerprint: 0x5e266ebc
+Variable types: 0 continuous, 49753 integer (49753 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21034.334516
+Presolve removed 180599 rows and 29615 columns
+Presolve time: 0.16s
+Presolved: 18640 rows, 20138 columns, 37280 nonzeros
+Variable types: 0 continuous, 20138 integer (20138 binary)
+Performing another presolve...
+Presolve removed 18640 rows and 20138 columns
+Presolve time: 0.08s
+Found heuristic solution: objective 22574.241065
+
+Explored 1 nodes (0 simplex iterations) in 0.33 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22574.2 21034.3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.257424106473e+04, best bound 2.257424106473e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.2304217171669006e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.2304217171669006e+02
+
+Optimize a model with 233112 rows, 50001 columns and 333873 nonzeros
+Model fingerprint: 0xe4ef6a3e
+Variable types: 0 continuous, 50001 integer (50001 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21120.749297
+Presolve removed 215311 rows and 32060 columns
+Presolve time: 0.21s
+Presolved: 17801 rows, 17941 columns, 35602 nonzeros
+Variable types: 0 continuous, 17941 integer (17941 binary)
+Performing another presolve...
+Presolve removed 17801 rows and 17941 columns
+Presolve time: 0.09s
+Found heuristic solution: objective 22576.793795
+
+Explored 1 nodes (0 simplex iterations) in 0.41 seconds (0.13 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22576.8 21120.7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.257679379468e+04, best bound 2.257679379468e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 1.7813852930068970e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.7813852930068970e+02
+
+Optimize a model with 198853 rows, 49754 columns and 265082 nonzeros
+Model fingerprint: 0xf8b7bbef
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21020.165487
+Presolve removed 180429 rows and 29794 columns
+Presolve time: 0.16s
+Presolved: 18424 rows, 19960 columns, 36848 nonzeros
+Variable types: 0 continuous, 19960 integer (19960 binary)
+Performing another presolve...
+Presolve removed 18424 rows and 19960 columns
+Presolve time: 0.09s
+Found heuristic solution: objective 22590.893853
+
+Explored 1 nodes (0 simplex iterations) in 0.35 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22590.9 21020.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.259089385277e+04, best bound 2.259089385277e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.3342776179313660e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.3342776179313660e+02
+
+Optimize a model with 233771 rows, 50000 columns and 334918 nonzeros
+Model fingerprint: 0xcd56108a
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21140.835180
+Presolve removed 216046 rows and 32205 columns
+Presolve time: 0.28s
+Presolved: 17725 rows, 17795 columns, 35450 nonzeros
+Variable types: 0 continuous, 17795 integer (17795 binary)
+Performing another presolve...
+Presolve removed 17725 rows and 17795 columns
+Presolve time: 0.08s
+Found heuristic solution: objective 22593.905315
+
+Explored 1 nodes (0 simplex iterations) in 0.48 seconds (0.14 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22593.9 21140.8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.259390531539e+04, best bound 2.259390531539e+04, gap 0.0000%
+Search
+Search
+Set parameter TimeLimit to value 1.5841765809059143e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.5841765809059143e+02
+
+Optimize a model with 199017 rows, 49754 columns and 265684 nonzeros
+Model fingerprint: 0xd75e0203
+Variable types: 0 continuous, 49754 integer (49754 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 20993.672599
+Presolve removed 180161 rows and 29559 columns
+Presolve time: 0.17s
+Presolved: 18856 rows, 20195 columns, 37712 nonzeros
+Variable types: 0 continuous, 20195 integer (20195 binary)
+Performing another presolve...
+Presolve removed 18856 rows and 20195 columns
+Presolve time: 0.08s
+Found heuristic solution: objective 22617.631067
+
+Explored 1 nodes (0 simplex iterations) in 0.34 seconds (0.11 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22617.6 20993.7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.261763106681e+04, best bound 2.261763106681e+04, gap 0.0000%
+Set parameter TimeLimit to value 1.4801869869232178e+02
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (linux64 - "Ubuntu 22.04.5 LTS")
+
+CPU model: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1.4801869869232178e+02
+
+Optimize a model with 233333 rows, 50000 columns and 334316 nonzeros
+Model fingerprint: 0xed992ce4
+Variable types: 0 continuous, 50000 integer (50000 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-05, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21183.208297
+Presolve removed 215788 rows and 32290 columns
+Presolve time: 0.29s
+Presolved: 17545 rows, 17710 columns, 35090 nonzeros
+Variable types: 0 continuous, 17710 integer (17710 binary)
+Performing another presolve...
+Presolve removed 17545 rows and 17710 columns
+Presolve time: 0.09s
+Found heuristic solution: objective 22612.123215
+
+Explored 1 nodes (0 simplex iterations) in 0.49 seconds (0.13 work units)
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 22612.1 21183.2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.261212321490e+04, best bound 2.261212321490e+04, gap 0.0000%
+Search
+Search
+[600.8693916797638, 704.4861271381378, 724.5987203121185, 822.7235209941864, 842.9279677867889, 939.3839108943939, 959.2545726299286, 1056.5151691436768, 1076.3462340831757, 1173.2604241371155, 1193.440104007721, 1292.3248527050018, 1312.3374636173248, 1411.6425471305847, 1433.3292088508606, 1530.5033037662506, 1551.2124786376953, 1648.6148462295532, 1667.721755027771, 1764.9757199287415, 1785.1794068813324, 1885.0364110469818, 1907.2262506484985, 2018.4737226963043, 2043.6970281600952, 2163.7132074832916, 2242.586164712906, 2395.5443620681763, 2428.128803730011, 2601.0068225860596, 2602.7126982212067, 2718.076211452484, 2784.6135771274567, 2912.0504972934723, 2956.053159713745, 3102.9122972488403, 3112.733959913254]
+[21624.300419573683, 21717.7248363704, 21720.42505646811, 21841.958226282437, 21821.984031083954, 21943.92467945678, 21930.13737009938, 22021.03711164542, 22025.587719265583, 22111.314602979277, 22097.70037724143, 22177.57054500884, 22178.810659535302, 22250.07088472726, 22232.491757784683, 22308.91521143067, 22301.62575171788, 22350.77950526102, 22356.58304152739, 22404.620270789565, 22396.845893472877, 22438.96924670975, 22440.58417291107, 22474.3091698223, 22467.200753098434, 22502.277600207042, 22499.395325909558, 22531.18685522584, 22525.970593851518, 22550.20271024329, 22554.93466128139, 22574.241064733724, 22576.79379468064, 22590.89385276719, 22593.905315392232, 22617.63106680873, 22612.123214897245]

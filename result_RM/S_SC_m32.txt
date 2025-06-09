@@ -1,0 +1,41 @@
+nohup: ignoring input
+feasible solution found by trivial heuristic after 1.1 seconds, objective value 9.870298e+04
+presolving:
+(round 1, fast)       3769 del vars, 0 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 0 clqs
+   (2.9s) running MILP presolver
+   (3.3s) MILP presolver found nothing
+(round 2, exhaustive) 3769 del vars, 0 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 200000 upgd conss, 0 impls, 0 clqs
+(round 3, fast)       13394 del vars, 0 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 0 chg coeffs, 200000 upgd conss, 0 impls, 0 clqs
+(round 4, fast)       13577 del vars, 0 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 9625 chg coeffs, 200000 upgd conss, 0 impls, 9 clqs
+(round 5, exhaustive) 13938 del vars, 0 del conss, 0 add conss, 0 chg bounds, 0 chg sides, 9817 chg coeffs, 200000 upgd conss, 0 impls, 201 clqs
+   (9.5s) probing: 51/186061 (0.0%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+   (9.5s) probing aborted: 50/50 successive totally useless probings
+   (10.1s) symmetry computation started: requiring (bin +, int -, cont +), (fixed: bin -, int +, cont -)
+   (10.8s) no symmetry present
+presolving (6 rounds: 6 fast, 3 medium, 3 exhaustive):
+ 13939 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 10170 changed coefficients
+ 0 implications, 210 cliques
+presolved problem has 186061 variables (186061 bin, 0 int, 0 impl, 0 cont) and 200000 constraints
+ 200000 constraints of type <logicor>
+Presolving Time: 10.71
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+t11.7s|     1 |     0 |     0 |     - | trivial|   0 | 186k| 200k|   0 |   0 |  0 |   0 |   0 | 0.000000e+00 | 9.184946e+04 |    Inf | unknown
+p45.7s|     1 |     0 |     0 |     - |   locks|   0 | 186k| 200k| 200k|   0 |  0 |   0 |   0 | 0.000000e+00 | 2.525529e+04 |    Inf | unknown
+i46.0s|     1 |     0 |     0 |     - |  oneopt|   0 | 186k| 200k| 200k|   0 |  0 |   0 |   0 | 0.000000e+00 | 2.512575e+04 |    Inf | unknown
+  796s|     1 |     0 | 95547 |     - |  1136M |   0 | 186k| 200k| 200k|   0 |  0 |   0 |   0 | 0.000000e+00 | 2.512575e+04 |    Inf | unknown
+(node 1) LP solver hit time limit in LP 1 -- using pseudo solution instead
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 795.57
+Solving Nodes      : 1
+Primal Bound       : +2.51257481709692e+04 (5 solutions)
+Dual Bound         : +0.00000000000000e+00
+Gap                : infinite
+minimize
+Traceback (most recent call last):
+  File "/home/yehuigen/RM/RM_SCIP_new.py", line 196, in <module>
+    nowSol, nowVal = search(obj_type, n, m, k, site, value, constraint, constraint_type, coefficient, nowX, city_partition[i], 0.1 * set_time)
+  File "/home/yehuigen/RM/RM_SCIP_new.py", line 67, in search
+    coeff += now_sol[i] * coefficient[i]
+TypeError: 'int' object is not subscriptable
