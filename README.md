@@ -25,34 +25,41 @@ To benchmark the performance of our approach, we compare it against several stat
 
 <a name="3">
 </a>
+
 [3] N. Alon, B. Awerbuch and Y. Azar, [The online set cover problem](https://dl.acm.org/doi/10.1145/780542.780558), in Proceedings of the Thirty-Fifth Annual ACM Symposium on Theory of Computing, (2003), 100–105.
 
 
 <a name="4">
 </a>
+
 [4] P. Cramton, Y. Shoham, and R. Steinberg, [Introduction to combinatorial auctions, Combinatorial Auctions](https://www.cramton.umd.edu/papers2005-2009/cramton-shoham-steinberg-combinatorial-auctions-introduction.pdf), 1–14, MIT Press Cambridge, MA, 2006.
 
 
 <a name="5">
 </a>
+
 [5] J. P. Pedroso, [Optimization with Gurobi and Python](https://www.dcc.fc.up.pt/~jpp/seminars/azores/gurobi-intro.pdf), INESC Porto and Universidade do Porto, Porto, Portugal, 1 (2011).
 
 
 <a name="6">
 </a>
+
 [6] T. Achterberg, [SCIP: Solving constraint integer programs](https://dx.doi.org/https://doi.org/10.1007/s12532-008-0001-1), Mathematical Programming Computation, 1 (2009), 1–41. 
 
 
 <a name="7">
 </a>
+
 [7] J. Song, Y. Yue and B. Dilkina, [A general large neighborhood search framework for solving integer linear programs](https://papers.nips.cc/paper/2020/hash/e769e03a9d329b2e864b4bf4ff54ff39-Abstract.html), Advances in Neural Information Processing Systems, 33 (2020), 20012–20023.
 
 
 <a name="8">
 </a>
+
 [8] V. Nair, M. Alizadeh et al., [Neural large neighborhood search](https://homes.di.unimi.it/righini/Didattica/ComplementiRicercaOperativa/MaterialeCRO/2000%20-%20Mitchell%20-%20branch-and-cut.pdf), in Learning Meets Combinatorial Algorithms at NeurIPS, (2020).
 
 <a name="9">
 </a>
+
 [9] E. Danna, E. Rothberg and C. Le Pape, [Exploring relaxation induced neighbor- hoods to improve MIP solutions](https://dx.doi.org/https://doi.org/10.1007/s10107-004-0510-0), Mathematical Programming, 102 (2005), 71–90.
 
