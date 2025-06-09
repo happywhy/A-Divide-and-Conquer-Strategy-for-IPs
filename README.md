@@ -1,4 +1,5 @@
-# Divide-and-Conquer-Strategy
+# A Divide-and-Conquer Strategy for IPs
+
 This repository contains the Matlab implementation of the algorithm framework for Adaptive Batch-ParEGO in the research paper: A Divide-and-Conquer Strategy for Integer Programming Problems.
 
 
